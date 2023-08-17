@@ -1,0 +1,64 @@
+<h2>Выбор книги</h2>
+<div>
+    <p>
+        <img src="{{book.cover}}" alt="book cover" />
+    </p> <p class="nameBook">
+        <b>{{book.name}}</b>
+    </p> <p>
+        Авторы: <b>{{book.author}}</b>
+    </p> <p>
+        Год издания: <b>{{book.year}}</b>
+    </p> <p>
+        Количество оставшихся: <b>{{book.amount}}</b>
+    </p> <p>
+        <b>На чьё имя вы хотите взять книгу?:</b>
+    </p> <p>
+        <textarea id="textboxForName" placeholder="фамилия и имя" wrap="off" rows="1" cols="50" autocomplete="on"></textarea>
+    </p>
+     <p>
+        <button class="gradient-button-take" onclick="borrowBook()"> Взять книгу </button>
+        <button class="gradient-button-return" onclick="backBook()"> Сдать книгу </button>
+    </p> <p>
+        <button class="backbutton" onclick="goBack()"> Назад </button>
+    </p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    function backBook() {
+        $.post('/back_book', {
+            bookID: {{book.id}}, 
+            name: document.getElementById('textboxForName').value
+        })
+        .fail(function() {
+            alert(`Не удалось сдать книгу, проверьте правильность введённого имени или количество книг у вас на руках`);
+        })
+        .done(function() {
+            alert(`Книга успешно сдана`);
+            document.location.href = "http://localhost:3000/borrow_book_menu?id={{book.id}}";
+        })
+    }
+    
+    function borrowBook() {
+        if ({{book.amount}} == 0) {
+            alert("Извините, данная книга закончилась.");
+            return;
+        }
+        $.post('/borrow_book', {
+            bookID: {{book.id}}, 
+            name: document.getElementById('textboxForName').value
+        })
+        .fail(function() {
+            alert(`Не удалось взять книгу, проверьте правильность введённого имени`);
+        })
+        .done(function() {
+            let date = new Date();
+            date.setDate(date.getDate() + 14);
+            alert(`На ваше имя взята книга "{{book.name}}". Верните книгу не позднее ` + date.toLocaleDateString());
+            document.location.href = "http://localhost:3000/borrow_book_menu?id={{book.id}}";
+        })
+    }
+    function goBack() {
+        document.location.href = "http://localhost:3000";
+    }
+</script>

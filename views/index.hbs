@@ -1,0 +1,39 @@
+<h1>Библиотека иностранной литературы</h1>
+<script>
+    window.onload = () => {    
+    let input = document.querySelector('#input');
+    input.oninput = function() {
+        let value = this.value.trim();
+        let list = document.querySelectorAll('.books a');
+
+        if (value != '') {
+            list.forEach(elem => {
+                if(elem.innerText.search(value) == -1) {
+                    elem.classList.add('hide');
+                }
+                else {
+                    elem.classList.remove('hide');
+                }
+            });
+        }
+        else {
+            list.forEach(elem => {
+                elem.classList.remove('hide');
+            });
+        }
+    };
+}; 
+</script>
+    <div class="wrap"></div>
+        <input type="text" id="input" class="input" >
+        <div class="books">
+            <a href="borrow_book_menu?id=0" title="The oldman and the sea"><img class="image" src="https://sun9-54.userapi.com/impg/-RLiZonSHkVxxhrfNsvuZ_XDBrTrCZR2RQhh_A/fl7SMzgHv-c.jpg?size=890x1360&quality=96&sign=d954d37cc4e59ff99f6b3fe4fe4a8cd9&type=album"  alt="The oldman and the sea"><m>The oldman and the sea || Ernest Hemingway || ISBN 978-5-9925-0282-4 || 334096 || Каро </m></a>
+            <a href="borrow_book_menu?id=1" title="Farewell to arms"><img class="image" src="https://sun9-2.userapi.com/impg/8ekxaqUNu7p6wyVEVrl8eH_pzGtxspj3lO9XRA/A2ous4-Uys8.jpg?size=890x1360&quality=96&sign=8249e70ccfe94b35111b83afdc15cd35&type=album" alt="Farewell to arms"><m>Farewell to arms || Ernest Hemingway || ISBN 9780099273974 || 577397 || Random House</m></a>
+            <a href="borrow_book_menu?id=2" title="All quite on the western front"><img class="image" src="https://sun9-9.userapi.com/impg/4Zqgs5GXDE7lkYfj3Dtn6ceESfldzOdYkNymuw/mXvtVq6uBzs.jpg?size=890x1360&quality=96&sign=b22f22733e8b923f85181ac43acdbc62&type=album" alt="All quite on the western front"><m>All quite on the western front || Erich Maria Remarque ||ISBN 978-5-9925-1372-1 || 705493 || Каро</m></a>
+            <a href="borrow_book_menu?id=3" title="The man in the high castle"><img class="image" src="https://sun9-22.userapi.com/impg/VcaJmMa3Kla-i1trZbreHtyuK5_XquL3QNjgMw/P1n9dnNomf0.jpg?size=890x1360&quality=96&sign=64853c1b91ff7b836dd449a8932a7f19&type=album" alt="The man in the high castle"><m>The man in the high castle || Philip Dick || ISBN 9780575082052 || 328633 || Orion</m></a>
+            <a href="borrow_book_menu?id=4" title="The catcher in the rye"><img class="image" src="https://sun9-74.userapi.com/impg/srzwZd2chZiBppdc64Cr-VqbJ0Ctl2U-GwfQAg/GlbC54EFyWs.jpg?size=890x1360&quality=96&sign=3fcb9cb1bb245fdafd0ebe4313a6af94&type=album" alt="The catcher in the rye"><m>The catcher in the rye || Jerome Salinger || 978-5-9925-0147-6 || 308100 || Каро</m></a>
+            <a href="borrow_book_menu?id=5" title="Clockwork orange"><img class="image" src="https://sun9-19.userapi.com/impg/jRMHNlsfE7TFzoFcILJHW-nPM8IkI6NUlKHHEw/RO6mKVuCAsw.jpg?size=890x1360&quality=96&sign=4d713f62896c91ea34db0e89cbbe983f&type=album" alt="Clockwork orange"><m>Clockwork orange || Burgess Antony || ISBN: 9780241951446 || 841809 || Penguin</m></a>
+            <a href="borrow_book_menu?id=6" title="Do androids dream of electric sheeps?"><img class="image" src="https://sun9-46.userapi.com/impg/r5Kg__2vkiJ5Imfw3kL4XcN8hjx1I0wLtZ-IXQ/bTMjdezIkAc.jpg?size=890x1360&quality=96&sign=a2f6bddcc282eb8469933e127631d018&type=album" alt="Do androids dream of electric sheeps?"><m>Do androids dream of electric sheeps? || Philip Dick || ISBN: 978-5-04-111868-6 || 831321 || Эксмо</m></a>
+            <a href="borrow_book_menu?id=7" title="Ctulhu"><img class="image" src="https://sun9-1.userapi.com/impg/JSoYUljDp7O39wpr-mGSjZsy-yzFRpfRXBE28Q/j_xwfzgXAYs.jpg?size=890x1360&quality=96&sign=357dde9d047d0aac413f908582481186&type=album" alt="Ctulhu"><m>The Call of Cthulhu || Howard Lovecraft || ISBN: 978-5-519-03029-8 || 826190 || RUGRAM</m></a>
+        </div>   
+    </div>

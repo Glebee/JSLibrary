@@ -1,0 +1,92 @@
+{
+    "books": [
+        {
+            "name": "The oldman and the sea",
+            "year": 1952,
+            "cover": "https://sun9-54.userapi.com/impg/-RLiZonSHkVxxhrfNsvuZ_XDBrTrCZR2RQhh_A/fl7SMzgHv-c.jpg?size=890x1360&quality=96&sign=d954d37cc4e59ff99f6b3fe4fe4a8cd9&type=album",
+            "id": 0,
+            "isbn": 9785992502824,
+            "author": "Ernest Hemingway",
+            "ed_code": 334096,
+            "publisher": "Каро",
+            "amount": 4
+        },
+        {
+            "name": "Farewell to arms",
+            "year": 1929,
+            "cover": "https://sun9-2.userapi.com/impg/8ekxaqUNu7p6wyVEVrl8eH_pzGtxspj3lO9XRA/A2ous4-Uys8.jpg?size=890x1360&quality=96&sign=8249e70ccfe94b35111b83afdc15cd35&type=album",
+            "id": 1,
+            "isbn": 9780099273974,
+            "author": "Ernest Hemingway",
+            "ed_code": 577397,
+            "publisher": "Random House",
+            "amount": 14
+        },
+        {
+            "name": "All quiet on the western front",
+            "year": 1929,
+            "cover": "https://sun9-9.userapi.com/impg/4Zqgs5GXDE7lkYfj3Dtn6ceESfldzOdYkNymuw/mXvtVq6uBzs.jpg?size=890x1360&quality=96&sign=b22f22733e8b923f85181ac43acdbc62&type=album",
+            "id": 2,
+            "isbn": 9785992513721,
+            "author": "Erich Maria Remarque",
+            "ed_code": 705493,
+            "publisher": "Каро",
+            "amount": 5
+        },
+        {
+            "name": "The man in the high castle",
+            "year": 1962,
+            "cover": "https://sun9-22.userapi.com/impg/VcaJmMa3Kla-i1trZbreHtyuK5_XquL3QNjgMw/P1n9dnNomf0.jpg?size=890x1360&quality=96&sign=64853c1b91ff7b836dd449a8932a7f19&type=album",
+            "id": 3,
+            "isbn": 9780575082052,
+            "author": "Philip Dick",
+            "ed_code": 328633,
+            "publisher": "Orion",
+            "amount": 8
+        },
+        {
+            "name": "The catcher in the rye",
+            "year": 1951,
+            "cover": "https://sun9-74.userapi.com/impg/srzwZd2chZiBppdc64Cr-VqbJ0Ctl2U-GwfQAg/GlbC54EFyWs.jpg?size=890x1360&quality=96&sign=3fcb9cb1bb245fdafd0ebe4313a6af94&type=album",
+            "id": 4,
+            "isbn": 9785992501476,
+            "author": "Jerome Salinger",
+            "ed_code": 308100,
+            "publisher": "Каро",
+            "amount": 15
+        },
+        {
+            "name": "Clockwork orange",
+            "year": 1962,
+            "cover": "https://sun9-19.userapi.com/impg/jRMHNlsfE7TFzoFcILJHW-nPM8IkI6NUlKHHEw/RO6mKVuCAsw.jpg?size=890x1360&quality=96&sign=4d713f62896c91ea34db0e89cbbe983f&type=album",
+            "id": 5,
+            "isbn": 9780241951446,
+            "author": "Burgess Antony",
+            "ed_code": 841809,
+            "publisher": "Penguin",
+            "amount": 5
+        },
+        {
+            "name": "Do androids dream of electric sheeps?",
+            "year": 1968,
+            "cover": "https://sun9-46.userapi.com/impg/r5Kg__2vkiJ5Imfw3kL4XcN8hjx1I0wLtZ-IXQ/bTMjdezIkAc.jpg?size=890x1360&quality=96&sign=a2f6bddcc282eb8469933e127631d018&type=album",
+            "id": 6,
+            "isbn": 9785041118686,
+            "author": "Philip Dick",
+            "ed_code": 831321,
+            "publisher": "Эксмо",
+            "amount": 9
+        },
+        {
+            "name": "Cthulhu",
+            "year": 1928,
+            "cover": "https://sun9-1.userapi.com/impg/JSoYUljDp7O39wpr-mGSjZsy-yzFRpfRXBE28Q/j_xwfzgXAYs.jpg?size=890x1360&quality=96&sign=357dde9d047d0aac413f908582481186&type=album",
+            "id": 7,
+            "isbn": 9785519030298,
+            "author": "Hovard Lovecraft",
+            "ed_code": 826190,
+            "publisher": "RUGRAM",
+            "amount": 10
+        }
+    ]
+}
